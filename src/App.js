@@ -20,17 +20,17 @@ const App = () => {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="https://hyagocolares.github.io/hcimports/" element={<Home />} />
-        <Route path="https://hyagocolares.github.io/hcimports/produtos" element={<Products />} />
-        <Route path="https://hyagocolares.github.io/hcimports/productlist" element={<ProductList />} />
-        <Route path="https://hyagocolares.github.io/hcimports/product/:id" element={<ProductDetails />} />
-        <Route path="https://hyagocolares.github.io/hcimports/carrinho" element={<Cart />} />
-        <Route path="https://hyagocolares.github.io/hcimports/pagamento" element={<Payment />} />
-        <Route path="https://hyagocolares.github.io/hcimports/pagamento2" element={<Payment2 />} />
-        <Route path="https://hyagocolares.github.io/hcimports/termos de servico" element={<TermsOfService />} />
-        <Route path="https://hyagocolares.github.io/hcimports/politica de privacidade" element={<PrivacyPolicy />} />
-        <Route path="https://hyagocolares.github.io/hcimports/contato" element={<Contact />} />
-        <Route path="https://hyagocolares.github.io/hcimports/about" element={<AboutUs />} />
+        <Route path="https://hyagocolares.github.io/" element={<Home />} />
+        <Route path="https://hyagocolares.github.io/produtos" element={<Products />} />
+        <Route path="https://hyagocolares.github.io/productlist" element={<ProductList />} />
+        <Route path="https://hyagocolares.github.io/product/:id" element={<ProductDetails />} />
+        <Route path="https://hyagocolares.github.io/carrinho" element={<Cart />} />
+        <Route path="https://hyagocolares.github.io/pagamento" element={<Payment />} />
+        <Route path="https://hyagocolares.github.io/pagamento2" element={<Payment2 />} />
+        <Route path="https://hyagocolares.github.io/termos de servico" element={<TermsOfService />} />
+        <Route path="https://hyagocolares.github.io/politica de privacidade" element={<PrivacyPolicy />} />
+        <Route path="https://hyagocolares.github.io/contato" element={<Contact />} />
+        <Route path="https://hyagocolares.github.io/about" element={<AboutUs />} />
       </Routes>
       <Footer />
     </Router>
