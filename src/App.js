@@ -21,16 +21,16 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="https://hyagocolares.github.io/" element={<Home />} />
-        <Route path="/produtos" element={<Products />} />
-        <Route path="/productlist" element={<ProductList />} />
-        <Route path="/product/:id" element={<ProductDetails />} />
-        <Route path="/carrinho" element={<Cart />} />
-        <Route path="/pagamento" element={<Payment />} />
-        <Route path="/pagamento2" element={<Payment2 />} />
-        <Route path="/termos de servico" element={<TermsOfService />} />
-        <Route path="/politica de privacidade" element={<PrivacyPolicy />} />
-        <Route path="/contato" element={<Contact />} />
-        <Route path="/about" element={<AboutUs />} />
+        <Route path="https://hyagocolares.github.io/produtos" element={<Products />} />
+        <Route path="https://hyagocolares.github.io/productlist" element={<ProductList />} />
+        <Route path="https://hyagocolares.github.io/product/:id" element={<ProductDetails />} />
+        <Route path="https://hyagocolares.github.io/carrinho" element={<Cart />} />
+        <Route path="https://hyagocolares.github.io/pagamento" element={<Payment />} />
+        <Route path="https://hyagocolares.github.io/pagamento2" element={<Payment2 />} />
+        <Route path="https://hyagocolares.github.io/termos de servico" element={<TermsOfService />} />
+        <Route path="https://hyagocolares.github.io/politica de privacidade" element={<PrivacyPolicy />} />
+        <Route path="https://hyagocolares.github.io/contato" element={<Contact />} />
+        <Route path="https://hyagocolares.github.io/about" element={<AboutUs />} />
       </Routes>
       <Footer />
     </Router>
