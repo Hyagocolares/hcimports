@@ -1,7 +1,7 @@
 {
   "name": "hc-imports",
   "version": "0.1.0",
-  "homepage": "https://Hyagocolares.github.io/hcimports",
+  "homepage": "https://hyagocolares.github.io/hcimports",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
