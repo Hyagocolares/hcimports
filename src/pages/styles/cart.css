@@ -1,0 +1,137 @@
+/* frontend/src/pages/styles/cart.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cart_title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cart_item {
+  list-style: none;
+  padding: 0;
+}
+
+.cart_item li {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.cart-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.cart-text {
+  flex: 1;
+}
+
+.cart-text-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.cart-text-qaunti,
+.cart-text-price-unit,
+.cart-text-subtotal {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.cart-select-number-quant {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.cart-button-remove {
+  background-color: #f44336;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 15px;
+  margin-left: 10px;
+}
+
+.cart-button-remove:hover {
+  background-color: #e53935;
+}
+
+.cart-area-total-price {
+  background-color: #fff;
+  padding: 15px;
+}
+
+.cart-text-total-price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+}
+
+.cart-button-pagament {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.cart-button-pagament:hover {
+  background-color: #45a049;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Estilos para telas menores que 480px */
+@media (max-width: 480px) {
+  .cart_item li {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cart-img {
+    margin: 0 auto 10px auto;
+  }
+
+  .cart-text {
+    margin-bottom: 10px;
+  }
+
+  .cart-button-remove,
+  .cart-button-pagament {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

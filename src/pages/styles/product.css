@@ -1,0 +1,21 @@
+/* frontend/src/pages/styles/product.css */
+.product {
+  padding: 25px;
+  padding-top: 15px;
+  background-color: #dfdfdf;
+}
+
+.product a {
+  text-decoration: none;
+}
+
+.pcc {
+  margin-left: 20px;
+}
+
+@media (max-width: 480px) {
+  .product {
+    padding: 15px;
+    padding-top: 10px;
+  }
+}

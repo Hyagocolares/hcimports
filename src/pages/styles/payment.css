@@ -1,0 +1,87 @@
+/* frontend/src/pages/styles/payment.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.payment-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.payment_title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.payment-form {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.payment-form label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.payment-form input {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.order-summary {
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.total-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+.confirmation-text {
+  font-size: 16px;
+  color: #666;
+  margin-top: 20px;
+}
+
+.confirmation-text strong {
+  font-weight: bold;
+}
+
+.payment-button {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-top: 30px;
+}
+
+.payment-button:hover {
+  background-color: #45a049;
+}
+
+a {
+  text-decoration: none;
+}
+
+.confirm-cor {
+  color: #547cd1;
+}

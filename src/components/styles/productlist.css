@@ -1,0 +1,129 @@
+/* frontend/src/pages/styles/productlist.css */
+.product-list-container {
+  background-color: #f2f2f2;
+  border-radius: 0.7%;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.pl-painel {
+  display: flex;
+  justify-content: space-between; /* Distribui os elementos na extremidade esquerda e direita */
+  align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+.pl-titulo {
+  margin-left: 30px;
+  margin-top: 5px;
+  padding-top: 5px;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.product-filter {
+  margin-top: 10px;
+  margin-right: 10px; /* Margem à direita para separar do canto direito */
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para o seletor de filtro */
+.product-filter select {
+  font-size: 14px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.product-filter select:hover {
+  border-color: #666;
+}
+
+.product-filter select:focus {
+  border-color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.pl-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pl-item {
+  background-color: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out; /* Adiciona um efeito de transição suave */
+}
+
+.pl-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Efeito de sombra ao passar o mouse */
+}
+
+.pl-img-item img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.pl-img-item img:hover {
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5); /* Efeito de sombra ao passar o mouse */
+}
+
+.text-item {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+.pl-text-name {
+  margin: 5px;
+  margin-left: -5px;
+  font-size: 15px;
+  color: black;
+}
+
+.pl-text-price {
+  margin: 5px;
+  margin-left: -5px;
+  font-size: 22px;
+  color: red;
+}
+
+.pl-text-message {
+  margin: 5px;
+  margin-left: -5px;
+  color: black;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+@media (max-width: 480px) {
+  .pl-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 20px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .text-item {
+    font-size: 12px;
+  }
+
+  .pl-text-price {
+    font-size: 18px;
+  }
+}

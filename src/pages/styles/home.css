@@ -1,0 +1,30 @@
+/* frontend/src/pages/styles/home.css */
+.home {
+  padding-top: 5px;
+  background-color: #dfdfdf;
+}
+
+.home a {
+  text-decoration: none;
+}
+
+.pcc {
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+.ProductList {
+  padding-top: 20px;
+  padding: 16px;
+}
+
+.ProductList .product-filter {
+  display: none;
+}
+
+.ProductCardCarousel {
+  padding: 16px;
+}
+.FeatureContainer{
+  padding: 16px;
+}

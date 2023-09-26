@@ -1,0 +1,132 @@
+/* frontend/src/components/styles/navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out; /* Adiciona um efeito de transição suave */
+}
+
+.navbar-logo a {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Centralizamos os links */
+}
+
+.navbar-links li {
+  margin-right: 20px;
+}
+
+.navbar-links a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: #000;
+}
+
+.navbar-menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end; /* Alinhamos o carrinho no canto direito */
+}
+
+.navbar-menu li {
+  margin-right: 20px;
+}
+
+.navbar-menu a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+.navbar-menu a:hover {
+  color: #000;
+}
+
+.navbar-links-m {
+  display: none;
+  justify-content: space-between; /* Alinhamos os itens igualmente na linha */
+  background-color: #f5f4f4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out; /* Adiciona um efeito de transição suave */
+}
+
+.navbar-links-m ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Garantimos que a lista ocupe toda a largura da div */
+}
+
+.navbar-links-m li {
+  width: 33.33%; /* Cada item da lista ocupa 33,33% da largura da div */
+  text-align: center; /* Centralizamos o texto dentro do item da lista */
+}
+
+.navbar-links-m a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.2s ease;
+  display: block; /* Fazemos os links ocuparem todo o espaço do item da lista */
+  padding: 10px 0; /* Adicionamos espaçamento interno para melhor visualização */
+}
+
+.navbar-links-m a:hover {
+  color: #000;
+}
+
+/* Estilos para telas menores (até 480px) */
+@media screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: row;
+  }
+
+  .navbar-logo {
+    margin-bottom: 10px;
+  }
+
+  .navbar-logo a {
+    font-size: 1.3rem;
+  }
+
+  .navbar-links ul {
+    display: none; /* Ocultamos os links da navbar */
+  }
+
+  .navbar-menu a {
+    font-size: 18px;
+  }
+
+  .navbar-links-m {
+    display: flex;
+  }
+
+  .navbar-links-m {
+    flex-direction: column; /* Alinhamos os itens da lista verticalmente */
+    align-items: center; /* Centralizamos a lista na div */
+  }
+
+  .navbar-links-m li {
+    width: 100%; /* Cada item da lista ocupa toda a largura da div */
+  }
+}

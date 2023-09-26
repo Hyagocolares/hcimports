@@ -1,0 +1,540 @@
+/* frontend/src/pages/styles/productdetails.css */
+.pdc {
+  padding: 10px;
+}
+
+/*Product*/
+/* Estilização para a seção de product do produto
+.product-details-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.pd-image-viewer,
+.pd-details,
+.pd-text {
+  flex: 1;
+  margin-right: 20px;
+  flex-basis: 0;
+}
+
+.pd-text {
+  margin-right: 0;
+}
+
+.pd-image-viewer {
+  
+}
+
+.pd-img {
+  width: auto;
+  height: auto;
+  min-width: 260px;
+  min-height: 300px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.pd-details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.pd-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pd-price-container {
+  display: flex;
+  align-items: center;
+}
+
+.pd-price {
+  font-size: 30px;
+  color: #f40;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.product-price-original {
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+.product-price-del {
+}
+
+.product-price-value {
+  text-decoration: line-through;
+  font-size: var(--font-size-2);
+  font-weight: 700;
+}
+
+.product-price-mark {
+}
+
+.pd-message {
+  margin-bottom: 10px;
+}
+
+.pd-button {
+  position: relative;
+}
+
+.product-details-container .pd-button {
+  padding: 10px;
+}
+
+.product-details-container button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product-details-container button:hover {
+  background-color: #3e8e41;
+}
+
+.product-details-container .pd-button-like {
+  background-color: #f35252;
+  margin: 5px;
+}
+
+.product-details-container .pd-button-like:hover {
+  background-color: #c92d2d;
+}
+
+.item-added-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  z-index: 1000;
+}
+
+.item-added-message img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.item-added-message span {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.item-added-message button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.item-added-message button:hover {
+  background-color: #45a049;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.close-button span {
+  font-size: 20px;
+  color: white;
+}
+
+.item-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-details-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.product-details-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-details-price {
+  font-size: 16px;
+  color: white;
+}
+
+.pd-text {
+  flex: 1;
+}
+*/
+
+/* Estilização para a seção de produto */
+.product-details-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.pd-image-viewer,
+.pd-details,
+.pd-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Estilização para a seção de visualização de imagem */
+.pd-image-viewer {
+}
+
+.pd-preview {
+  width: 100%;
+  max-width: 300px; /* Largura máxima da visualização da imagem */
+}
+
+.pd-img {
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* Altura máxima da imagem */
+  object-fit: contain;
+}
+
+/* Estilização para a seção de detalhes do produto */
+.pd-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #e3e3e3; /* Linha vertical separadora */
+  padding-right: 20px;
+}
+
+.pd-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pd-price-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.pd-price {
+  font-size: 30px;
+  color: #f40;
+  font-weight: bold;
+}
+
+.product-price-original {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #666;
+}
+
+.product-price-value {
+  text-decoration: line-through;
+}
+
+.product-price-mark {
+  margin-left: 5px;
+  color: #f40;
+  font-weight: bold;
+}
+
+.pd-message {
+  margin-bottom: 10px;
+}
+
+/* Estilização para a seção de texto do produto */
+.pd-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pd-button {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-details-container button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.product-details-container button:hover {
+  background-color: #3e8e41;
+}
+
+.pd-button-like {
+  background-color: #f35252;
+}
+
+.pd-button-like:hover {
+  background-color: #c92d2d;
+}
+
+/* Estilização para a mensagem de item adicionado */
+.item-added-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  z-index: 1000;
+}
+
+.item-added-message img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.item-added-message span {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.item-added-message button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.item-added-message button:hover {
+  background-color: #45a049;
+}
+
+/* Estilização para a seção de detalhes do item adicionado */
+.item-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Estilização para o botão de fechar a mensagem */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.close-button span {
+  font-size: 20px;
+  color: white;
+}
+
+/* Estilização para os detalhes do produto na mensagem */
+.product-details-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.product-details-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-details-price {
+  font-size: 16px;
+  color: white;
+}
+
+/* Estilização para a seção de detalhes do produto */
+.details-product-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Estilização para a tabela de detalhes do produto */
+.product-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.product-details-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.product-details-table tr:last-child td {
+  border-bottom: none; /* Remover borda inferior da última linha */
+}
+
+.product-details-table td:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+.product-details-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Estilização para a seção de imagens do produto */
+.images-product-container {
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+}
+
+/* Estilização para o título "Imagens do Produto" */
+.images-product-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Estilização para as imagens do produto */
+.product-images {
+  display: flex;
+  flex-direction: column; /* Empilhar imagens verticalmente */
+  align-items: center; /* Centralizar imagens horizontalmente */
+}
+
+.product-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/*Details*/
+/* Estilização para a seção de detalhes do produto */
+.details-product-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.product-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.product-details-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.product-details-table tr:last-child td {
+  border-bottom: none; /* Remover borda inferior da última linha */
+}
+
+.product-details-table td:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+.product-details-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/*Imagens*/
+/* Estilização para a seção de imagens do produto */
+.images-product-container {
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+}
+
+.images-product-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-images {
+  display: flex;
+  flex-direction: column; /* Empilhar imagens verticalmente */
+  align-items: center; /* Centralizar imagens horizontalmente */
+}
+
+.product-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}

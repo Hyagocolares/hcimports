@@ -1,0 +1,28 @@
+/* frontend/src/pages/styles/termsofservice.css */
+.TermsOfService-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.TermsOfService-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.TermsOfService-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+.TermsOfService-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.TermsOfService-text a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,117 @@
+/* frontend/src/components/styles/paymentpix.css */
+/* Estilos para o componente PaymentPix */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.Pix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.qrcode {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.qrcode img {
+  pointer-events: none;
+}
+
+.payment-pix-text {
+  font-size: 16px;
+}
+
+.payload {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.payload-text {
+  font-size: 16px; /* Tamanho de fonte desejado */
+  max-height: 200px; /* Altura máxima desejada para o elemento */
+  overflow-y: auto; /* Adiciona uma barra de rolagem vertical se o conteúdo for maior do que a altura máxima */
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+
+p {
+  font-size: 16px;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-family: monospace;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.copy-icon {
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+}
+
+.confirmation-text {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Estilos para tornar o componente responsivo */
+/* Responsividade */
+@media (max-width: 480px) {
+  .Pix {
+    width: 90%;
+  }
+  .qrcode {
+    margin-bottom: 10px;
+  }
+
+  .payment-pix-text {
+    font-size: 14px;
+  }
+
+  .payload {
+    padding: 50px;
+    width: 70%;
+  }
+
+  .payload p {
+    font-size: 16px;
+  }
+}

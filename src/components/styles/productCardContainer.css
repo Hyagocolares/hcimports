@@ -1,0 +1,99 @@
+/* frontend/src/components/styles/productCardContainer.css */
+.productscardcontaine {
+  background-color: #f2f2f2;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out; /* Adiciona um efeito de transição suave */
+}
+
+.product-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #e4e4e480;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out; /* Adiciona um efeito de transição suave */
+}
+
+.card-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Efeito de sombra ao passar o mouse */
+}
+
+.card-container img {
+  width: 100%;
+  max-width: 220px;
+  height: 220px;
+  object-fit: cover;
+  background-color: rgb(179, 179, 179);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-container img:hover {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.card-container h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+  text-align: center; /* Centraliza o texto */
+}
+
+
+
+.card-container p {
+  font-size: 16px;
+  margin: 5px 0;
+  text-align: center; /* Centraliza o texto */
+  overflow: hidden;
+}
+
+.product-card-price {
+  margin: 50px;
+}
+
+.text-product {
+  padding: 15px;
+}
+
+/* Estilos específicos para tamanhos ainda menores de tela, por exemplo, smartphones */
+@media (max-width: 480px) {
+  .product-card-container {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    grid-gap: 10px; /* Aumenta o espaçamento entre os elementos para evitar que fiquem muito juntos */
+    max-width: 480px;
+    padding: 0px; /* Reduz o espaçamento entre os elementos para se ajustar à tela menor */
+  }
+
+  .card-container {
+    width: 130px;
+    height: 260px;
+    padding: 10px; /* Reduz o espaçamento entre os elementos para se ajustar à tela menor */
+  }
+
+  .card-container img {
+    max-width: 140px;
+    height: 140px;
+  }
+
+  .card-container h3 {
+    font-size: 16px;
+  }
+
+  .card-container p {
+    font-size: 14px;
+  }
+}

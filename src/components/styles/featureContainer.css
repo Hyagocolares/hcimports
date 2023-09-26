@@ -1,0 +1,151 @@
+/* frontend/src/components/styles/featureContainer.css */
+.FeatureContainer {
+  padding-top: 30px;
+}
+
+.feature-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.site-item {
+  float: left;
+  width: 16.66666667%;
+  padding: 40px 0;
+  min-height: 228px;
+  text-align: center;
+  position: relative;
+}
+
+.site-item:last-child:after {
+  width: 0;
+}
+
+.site-item .icon {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+
+.site-item a:hover {
+  text-decoration: none;
+  color: #f60;
+}
+
+.site-item:after {
+  content: " ";
+  font-size: 44px;
+  width: 1px;
+  height: 56px;
+  background: #979797;
+  position: absolute;
+  opacity: 0.14;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%);
+}
+
+.site-item a:hover h3 {
+  color: #f60;
+}
+
+.site-item h3 {
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 600;
+}
+
+.site-item h3 a {
+  color: #333;
+}
+
+.site-item p {
+  margin-bottom: 0;
+  line-height: 18px;
+  color: #999;
+  padding: 0 15px;
+  font-size: 12px;
+}
+
+.site-item p a {
+  color: #000;
+}
+
+.ico-img {
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+.site-item .i-great {
+  background: url(//ae01.alicdn.com/kf/H6c6dc2505aa746fb925bb9ac2b4d69efm.png)
+    no-repeat 0 0;
+  background-size: cover;
+}
+
+.site-item .i-payment {
+  background: url(//ae01.alicdn.com/kf/Ha0b2b2eaf47d41ae8cd2316d329cc12a5.png)
+    no-repeat 0 0;
+  background-size: cover;
+}
+
+.site-item .i-confidence {
+  background: url(//ae01.alicdn.com/kf/H50c385ccd9b14597bd413b28c3452c46p.png)
+    no-repeat 0 0;
+  background-size: cover;
+}
+
+.site-item .i-help {
+  background: url(//ae01.alicdn.com/kf/H2ff477a894084d30aa203fdbb68a065eF.png)
+    no-repeat 0 0;
+  background-size: cover;
+}
+
+.site-item .i-insta {
+  background: url(//cdn-icons-png.flaticon.com/128/1384/1384031.png) no-repeat 0
+    0;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+.site-item .i-yt {
+  background: url(//cdn-icons-png.flaticon.com/128/1384/1384028.png) no-repeat 0
+    0;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+.site-item span {
+  display: block;
+}
+
+.site-item .title {
+  color: #333;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+.site-item .sub-title {
+  line-height: 20px;
+  color: #999;
+  padding: 0 15px;
+}
+
+.footer-wrap .user-helper-footer {
+  padding: 36px 0 24px;
+}
+
+/* Media query para telas menores ou iguais a 480px */
+@media (max-width: 480px) {
+  .site-item {
+    width: 100%;
+    padding: 10px 0;
+    min-height: 100px;
+  }
+}

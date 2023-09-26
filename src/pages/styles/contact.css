@@ -1,0 +1,48 @@
+/* frontend/src/pages/styles/contact.css */
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+/* Estilos para os exemplos de contatos */
+.contact-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-container li {
+  margin-bottom: 10px;
+}
+
+.contact-email {
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+.contact-number {
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+.contact-instagram a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-instagram a:hover {
+  text-decoration: underline;
+}
