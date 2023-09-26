@@ -20,7 +20,7 @@ const App = () => {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="https://hyagocolares.github.io/" element={<Home />} />
         <Route path="/produtos" element={<Products />} />
         <Route path="/productlist" element={<ProductList />} />
         <Route path="/product/:id" element={<ProductDetails />} />
